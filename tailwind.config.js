@@ -1,32 +1,43 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Gilda Display',
-      secondary: 'Barlow',
-      tertiary: 'Barlow Condensed',
+      primary: 'Playfair Display',
+      secondary: 'Lato',
     },
     container: {
       padding: {
-        DEFAULT: '15px',
+        DEFAULT: '10px',
+        // lg: '0',
       },
     },
     screens: {
       sm: '640px',
       md: '768px',
-      lg: '960px',
-      xl: '1140px',
+      lg: '1024px',
+      xl: '1200px',
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
+        body: '#e5e5e5',
+        dark: '#0a0909',
+        grey: {
+          DEFAULT: '#777876',
+          100: '#e4e4e3',
+        },
         accent: {
-          DEFAULT: '#a37d4c',
-          hover: '#967142',
+          DEFAULT: '#fe7634',
+          hover: '#F55304',
         },
       },
       backgroundImage: {
-        room: "url('./assets/img/room.jpg')",
+        pattern: "url('assets/img/body-bg-pattern.png')",
+        hero: "url('assets/img/hero/bg.png')",
+        menu: "url('assets/img/menu/bg.png')",
+        testimonial: "url('assets/img/testimonial/bg.png')",
+        newsletter: "url('assets/img/newsletter/bg.png')",
+        footer: "url('assets/img/footer/bg.png')",
       },
     },
   },

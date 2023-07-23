@@ -1,199 +1,175 @@
-// rooms images
-import Room1Img from './assets/img/rooms/1.png';
-import Room1ImgLg from './assets/img/rooms/1-lg.png';
-import Room2Img from './assets/img/rooms/2.png';
-import Room2ImgLg from './assets/img/rooms/2-lg.png';
-import Room3Img from './assets/img/rooms/3.png';
-import Room3ImgLg from './assets/img/rooms/3-lg.png';
-import Room4Img from './assets/img/rooms/4.png';
-import Room4ImgLg from './assets/img/rooms/4-lg.png';
-import Room5Img from './assets/img/rooms/5.png';
-import Room5ImgLg from './assets/img/rooms/5-lg.png';
-import Room6Img from './assets/img/rooms/6.png';
-import Room6ImgLg from './assets/img/rooms/6-lg.png';
-import Room7Img from './assets/img/rooms/7.png';
-import Room7ImgLg from './assets/img/rooms/7-lg.png';
-import Room8Img from './assets/img/rooms/8.png';
-import Room8ImgLg from './assets/img/rooms/8-lg.png';
 // import icons
 import {
-  FaWifi,
-  FaCoffee,
-  FaBath,
-  FaParking,
-  FaSwimmingPool,
-  FaHotdog,
-  FaStopwatch,
-  FaCocktail,
+  FaYoutube,
+  FaFacebookF,
+  FaInstagram,
+  FaPinterestP,
+  FaDiscord,
 } from 'react-icons/fa';
+// import images
+import AboutImg from '../src/assets/img/about/plate.png';
+import ModelWhiteImg from '../src/assets/img/model-white.png';
+import ModelBlackImg from '../src/assets/img/model-black.png';
+import MenuImg1 from '../src/assets/img/menu/1.png';
+import MenuImg2 from '../src/assets/img/menu/2.png';
+import MenuImg3 from '../src/assets/img/menu/3.png';
+import MenuImg4 from '../src/assets/img/menu/4.png';
+import SignatureImg from '../src/assets/img/team/signature.png';
+import ChefImg from '../src/assets/img/team/chef.png';
+import Avatar1 from '../src/assets/img/testimonial/avatar1.png';
+import Avatar2 from '../src/assets/img/testimonial/avatar2.png';
+import Avatar3 from '../src/assets/img/testimonial/avatar3.png';
 
-export const roomData = [
-  {
-    id: 1,
-    name: 'Superior Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 30,
-    maxPerson: 1,
-    price: 115,
-    image: Room1Img,
-    imageLg: Room1ImgLg,
-  },
-  {
-    id: 2,
-    name: 'Signature Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 70,
-    maxPerson: 2,
-    price: 220,
-    image: Room2Img,
-    imageLg: Room2ImgLg,
-  },
-  {
-    id: 3,
-    name: 'Deluxe Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 50,
-    maxPerson: 3,
-    price: 265,
-    image: Room3Img,
-    imageLg: Room3ImgLg,
-  },
-  {
-    id: 4,
-    name: 'Luxury Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 50,
-    maxPerson: 4,
-    price: 289,
-    image: Room4Img,
-    imageLg: Room4ImgLg,
-  },
-  {
-    id: 5,
-    name: 'Luxury Suite Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 90,
-    maxPerson: 5,
-    price: 320,
-    image: Room5Img,
-    imageLg: Room5ImgLg,
-  },
-  {
-    id: 6,
-    name: 'Deluxe Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 45,
-    maxPerson: 6,
-    price: 344,
-    image: Room6Img,
-    imageLg: Room6ImgLg,
-  },
-  {
-    id: 7,
-    name: 'Luxury Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea ccusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 84,
-    maxPerson: 7,
-    price: 389,
-    image: Room7Img,
-    imageLg: Room7ImgLg,
-  },
-  {
-    id: 8,
-    name: 'Deluxe Room',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit.Ea placeat eos sed voluptas unde veniam eligendi a. Quaerat molestiae hic omnis temporibus quos consequuntur nam voluptatum ea accusamus, corrupti nostrum eum placeat quibusdam quis beatae quae labore earum architecto aliquid debitis.',
-    facilities: [
-      { name: 'Wifi', icon: <FaWifi /> },
-      { name: 'Coffee', icon: <FaCoffee /> },
-      { name: 'Bath', icon: <FaBath /> },
-      { name: 'Parking Space', icon: <FaParking /> },
-      { name: 'Swimming Pool', icon: <FaSwimmingPool /> },
-      { name: 'Breakfast', icon: <FaHotdog /> },
-      { name: 'GYM', icon: <FaStopwatch /> },
-      { name: 'Drinks', icon: <FaCocktail /> },
-    ],
-    size: 48,
-    maxPerson: 8,
-    price: 499,
-    image: Room8Img,
-    imageLg: Room8ImgLg,
-  },
+export const navData = [
+  { href: '/', name: 'home' },
+  { href: '/', name: 'about' },
+  { href: '/', name: 'menu' },
+  { href: '/', name: 'team' },
+  { href: '/', name: 'testimonials' },
+  { href: '/', name: 'book a table' },
+  { href: '/', name: 'contact' },
 ];
+
+export const heroData = {
+  pretitle: 'Nothing brings together like',
+  title: 'Bistro Cafe',
+  subtitle:
+    'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
+  btnText: 'Find out more',
+};
+
+export const socialData = [
+  { href: '/', icon: <FaYoutube /> },
+  { href: '/', icon: <FaFacebookF /> },
+  { href: '/', icon: <FaInstagram /> },
+  { href: '/', icon: <FaPinterestP /> },
+  { href: '/', icon: <FaDiscord /> },
+];
+
+export const aboutData = {
+  pretitle: 'our story',
+  title: 'who we are',
+  subtitle:
+    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur, quasi minima molestiae ex exercitationem culpa quisquam architecto quaerat, iusto dolores labore, sapiente magni rem commodi aperiam ad dolorem neque ducimus. Placeat vel non quod quis pariatur a aperiam, aliquam adipisci voluptatum voluptatem sit cupiditate dolore natus beatae earum omnis.',
+  btnText: 'find out more',
+  image: AboutImg,
+};
+
+export const menuData = {
+  title: 'delicious flavour of autumn',
+  subtitle: 'view all menu for tasty meal today',
+  modelImg: ModelWhiteImg,
+  btnText: 'view complete menu',
+  menuItems: [
+    {
+      image: MenuImg1,
+      name: 'Chocolate Cake',
+      price: '$7.99',
+      description: 'Class aptent taciti ciosqu litora torquent per',
+    },
+    {
+      image: MenuImg2,
+      name: 'Veggie Burger',
+      price: '$9.49',
+      description: 'Class aptent taciti ciosqu litora torquent per',
+    },
+    {
+      image: MenuImg3,
+      name: 'King Burger',
+      price: '$8.50',
+      description: 'Class aptent taciti ciosqu litora torquent per',
+    },
+    {
+      image: MenuImg4,
+      name: 'Mexican Burger',
+      price: '$9.99',
+      description: 'Class aptent taciti ciosqu litora torquent per',
+    },
+  ],
+};
+
+export const teamData = {
+  pretitle: 'our team',
+  title: 'meet our chef',
+  sub1: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci repudiandae enim ratione corrupti voluptatum suscipit distinctio dolor.',
+  sub2: 'Sequi exercitationem quae deserunt reiciendis nesciunt perferendis atque quisquam, odit facere! Minima esse reiciendis, magnam fugiat totam maxime consequatur perspiciatis voluptas consequuntur.',
+  name: 'sara peter',
+  occupation: 'executive chef',
+  signatureImg: SignatureImg,
+  chefImg: ChefImg,
+};
+
+export const testimonialData = {
+  title: "what client's say ",
+  subtitle: '1500+ statisfied clients',
+  modelImg: ModelWhiteImg,
+  slider: [
+    {
+      message:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsum eius voluptatibus. Quod ipsum ullam id facere a beatae incidunt eaque, veritatis architecto cum perferendis debitis tempora.',
+      image: Avatar1,
+      name: 'Rick Thompson',
+      occupation: 'CEO of Delightful',
+    },
+    {
+      message:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsum eius voluptatibus. Quod ipsum ullam id facere a beatae incidunt eaque, veritatis architecto cum perferendis debitis tempora.',
+      image: Avatar2,
+      name: 'John Doe',
+      occupation: 'CEO of Delightful',
+    },
+    {
+      message:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsum eius voluptatibus. Quod ipsum ullam id facere a beatae incidunt eaque, veritatis architecto cum perferendis debitis tempora.',
+      image: Avatar3,
+      name: 'Henry A.',
+      occupation: 'CEO of Delightful',
+    },
+  ],
+};
+
+export const reservationData = {
+  title: 'booking form',
+  subtitle:
+    'Call (534) 551-80 80 from 8 AM - 12 PM daily, or book online with OpenTable.Reservations required for parties of 6 or more.',
+  modelImg: ModelBlackImg,
+  btnText: 'make a reservation',
+};
+
+export const newsletterData = {
+  title: 'join our newsletter',
+  subtitle: 'Get latest news & updates in your inbox.',
+  placeholder: 'Subscribe our delicious dishes',
+  btnText: 'subscribe now',
+};
+
+export const footerData = {
+  contact: {
+    title: 'contact location',
+    address: '3784 patterson road, #8 new york, CA 69000',
+    phone: '(534) 551 80 80',
+  },
+  hours: {
+    title: 'working hours',
+    program: [
+      {
+        days: 'monday - friday',
+        hours: '09:00 AM - 10:00 PM',
+      },
+      {
+        days: 'saturday - sunday',
+        hours: '09:00 AM - 11:00 PM',
+      },
+    ],
+  },
+  social: {
+    title: 'social network',
+    icons: [
+      { href: '/', icon: <FaYoutube /> },
+      { href: '/', icon: <FaFacebookF /> },
+      { href: '/', icon: <FaInstagram /> },
+      { href: '/', icon: <FaPinterestP /> },
+      { href: '/', icon: <FaDiscord /> },
+    ],
+  },
+};
